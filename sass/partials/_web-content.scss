@@ -1,0 +1,97 @@
+.web-content {
+  @extend .row;
+  h1 {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .web-content-chapo {
+    margin: 20px 0 30px 0;
+    font-family: "Times", Serif;
+    font-size: 20px;
+    font-style: italic;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 27px;
+    @media (min-width: $min-break-s) {
+      font-size: 27px;
+      margin: 40px auto 70px auto;
+      max-width: 80%;
+      line-height: 38px;
+    }
+  }
+  h2 {
+    color: $museum-color;
+    font-size: 32px;
+    text-transform: none;
+    font-weight: normal;
+    font-family: $font-family-base;
+  }
+  h3 {
+    font-size: 20px;
+    text-transform: none;
+    color: $museum-color;
+    margin: 0;
+    padding-top: 10px;
+  }
+  p {
+    margin: 10px 0;
+    line-height: 20px;
+  }
+  li {
+    padding: 2px 0;
+  }
+  ul, ol {
+    margin: 10px 0;
+    padding: 5px 0px 5px 20px;
+    @media (min-width: $min-break-s) {
+      padding: 5px 0 5px 40px;
+    }
+  }
+  ul ul {
+    list-style-type: disc;
+  }
+  a {
+    border-bottom: 1px solid $museum-color;
+  }
+  a[href$='jpg'], a[href$='png'], a[href$='jpeg'] {
+    border-bottom: 0;
+  }
+  cite {
+    border-left: 10px solid $museum-color;
+    padding: 20px 20px 20px 30px;
+    font-family: "Times", Serif;
+    display: block;
+    background: url("../images/background/quotes.png") no-repeat;
+    background-size: 134px 110px;
+    background-position: top right;
+    margin-bottom: 50px;
+    @media (min-width: $min-break-s) {
+      font-size: 28px;
+      line-height: 38px;
+    }
+  }
+  .video-container {
+    margin-bottom: 50px;
+  }
+
+  table {
+    border-collapse: collapse;
+    font-size: 13px;
+    width: 100%;
+  }
+  td, th {
+    padding: 20px;
+  }
+  th {
+    background-color: #e6e6e6;
+    font-family: $font-family-bold;
+    font-size: 15px;
+  }
+  tbody tr:nth-child(even) td {
+    background-color: #f2f2f2;
+  }
+}

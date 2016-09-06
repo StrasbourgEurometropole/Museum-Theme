@@ -1,0 +1,54 @@
+.rubric-portlet {
+  @extend .row;
+  .rubric-pages {
+    columns: 275px;
+    column-gap: 40px;
+    margin: 20px 0;
+    @media (min-width: $min-break-l) {
+      columns: 380px;
+    }
+  }
+  .rubric-page {
+    margin-bottom: 40px;
+    break-inside: avoid;
+  }
+  .rubric-page-image {
+    margin-bottom: 20px;
+  }
+  .rubric-page-name {
+    @extend strong;
+    color: #333333;
+    font-size: 20px;
+    a:hover {
+      color: $museum-color;
+    }
+  }
+  .rubric-page-links {
+    width: 100%;
+    padding: 5px 0;
+    li {
+      float: none;
+      width: 100%;
+      border-bottom: 1px solid #d8d8d8;
+      padding-top: 11px;
+      padding-bottom: 9px;
+      a {
+        border-bottom: 0;
+        &:hover {
+          @extend strong;
+          color: $museum-color;
+        }
+      }
+    }
+  }
+  .rubric-page-description {
+    line-height: 24px;
+  }
+  .rubric-page-read-more a {
+    @extend strong;
+    margin: 5px 0;
+    border-bottom: 1px solid $museum-color;
+    padding-bottom: 1px;
+    display: inline-block;
+  }
+}

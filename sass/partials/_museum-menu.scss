@@ -1,0 +1,62 @@
+.museum-header {
+  @extend .container;
+  @extend .hide-under-m;
+  .museum-menu {
+    width: 100%;
+    background: #333333;
+  }
+  li.menu-item {
+    background: #333333;
+    border-right: 1px solid #515151;
+    a {
+      padding: 10px 20px 8px 20px;
+      text-transform: uppercase;
+      color: white;
+      display: table-cell;
+      height: 52px;
+      vertical-align: middle;
+      font-size: 12.8px;
+    }
+    &:hover {
+      background-color: #3d3d3d;
+    }
+  }
+  li.menu-item.home-item {
+    background-color: $museum-color;
+    i.home-icon {
+      background-image: url("../images/icons/home.png");
+      background-repeat: no-repeat;
+      width: 15px;
+      height: 13px;
+      display: block;
+    }
+    &:hover {
+      background-color: $museum-color;
+    }
+  }
+  &.sticky {
+    position: fixed;
+    top: 34px;
+    z-index: 20;
+    @media(min-width: $min-break-l) {
+      left: calc(50% - 640px);
+    }
+  }
+  .museum-submenu {
+    display: none;
+    position: absolute;
+    li.menu-item {
+      z-index: 5;
+      border: 1px solid #515151;
+      a {
+      width: 200px;
+      padding-top: 12px;
+      padding-bottom: 10px;
+      height: auto;
+      }
+    }
+  }
+  li:hover .museum-submenu {
+    display: block;
+  }
+}

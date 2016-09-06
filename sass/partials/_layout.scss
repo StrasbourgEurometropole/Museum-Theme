@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.row {
+  padding: 0 20px;
+  &.portlet-layout {
+    padding: 0;
+  }
+}
+
+div[class^=col-] {
+  padding: 0;
+}
+
+#wrapper {
+  margin-top: 0 !important;
+  padding-top: 0;
+}

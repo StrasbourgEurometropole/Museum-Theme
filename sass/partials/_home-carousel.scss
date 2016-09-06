@@ -1,0 +1,164 @@
+.home-carousel {
+  .carousel-item {
+    position: relative;
+  }
+  .carousel-item-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .carousel-item-image img {
+    min-height: 250px;
+    object-fit: cover;
+  }
+  .carousel-item-title {
+    color: white;
+    font-size: 60px;
+    display: none;
+    @media(min-width: $min-break-m) {
+      display: inline-block;
+    }
+  }
+  .carousel-item-button {
+    color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: white;
+    font-family: $font-family-bold;
+    font-size: 15px;
+    width: 260px;
+    max-width: 50%;
+    padding: 12px 0;
+    border: 4px solid white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    &:hover {
+      background: rgba(0, 0, 0, 0.3);
+    }
+  }
+  .owl-prev, .owl-next {
+    position: absolute;
+    top: 50%;
+    color: transparent;
+    background-repeat: no-repeat;
+    width: 36px;
+  }
+  .owl-prev {
+    left: 20px;
+    background-image: url(../images/icons/arrow-left-white.png);
+  }
+  .owl-next {
+    right: 20px;
+    background-image: url(../images/icons/arrow-right-white.png);
+  }
+  .carousel-controls {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .museum-name {
+    margin-bottom: 20px;
+    margin-top: -55px;
+    z-index: 5;
+    color: white;
+    font-family: $font-family-bold;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  #carousel-custom-dots {
+    z-index: 2;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .owl-dot {
+    width: 45px;
+    height: 28px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.1s;
+    cursor: pointer;
+    @media(min-width: $min-break-s) {
+      width: 75px;
+      height: 50px;
+    }
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+    &.active {
+      transform: scale(1.3, 1.3);
+      z-index: 2;
+    }
+    &:hover {
+      transform: scale(1.3, 1.3);
+      z-index: 3;
+    }
+    &:after {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: "";
+      background: black;
+      top: 0;
+      left: 0;
+      opacity: 0.3;
+    }
+    &.active:after,
+    &:hover:after {
+      height: 5px;
+      top: auto;
+      bottom: 0;
+      opacity: 1;
+    }
+    &:nth-child(1):after {
+      background: $museum-color-hre;
+    }
+    &:nth-child(2):after {
+      background: $museum-color-ced;
+    }
+    &:nth-child(3):after {
+      background: $museum-color-mals;
+    }
+    &:nth-child(4):after {
+      background: $museum-color-marc;
+    }
+    &:nth-child(5):after {
+      background: $museum-color-mard;
+    }
+    &:nth-child(6):after {
+      background: $museum-color-mamc;
+    }
+    &:nth-child(7):after {
+      background: $museum-color-mba;
+    }
+    &:nth-child(8):after {
+      background: $museum-color-mh;
+    }
+    &:nth-child(9):after {
+      background: $museum-color-mond;
+    }
+    &:nth-child(10):after {
+      background: $museum-color-mtu;
+    }
+    &:nth-child(11):after {
+      background: $museum-color-mz;
+    }
+    &:nth-child(12):after {
+      background: $museum-color-aub;
+    }
+    &:nth-child(13):after {
+      background: $museum-color-aud;
+    }
+  }
+}

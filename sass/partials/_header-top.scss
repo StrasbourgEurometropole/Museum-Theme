@@ -1,0 +1,127 @@
+.header-top {
+  background: #2d2d2d;
+  height: 50px;
+  @media (min-width: $min-break-s) {
+    height: 40px;
+  }
+  .header-top-inner {
+    @extend .container;
+    @extend .row;
+  }
+  .strasbourg-eu-logo {
+    display: inline-block;
+    img {
+      width: 128px;
+      margin: 16px 0 6px 0;
+      @media (min-width: $min-break-s) {
+        margin: 10px 0 6px 0;
+      }
+    }
+  }
+  .accessibility-menu {
+    @extend .pull-right;
+    margin: -1px -18px 0 0;
+  }
+  .accessibility:hover,
+  .contact:hover {
+    background: rgba(255, 255, 255, 0.07);
+  }
+  .accessibility {
+    @extend .hide-under-m;
+  }
+  .contact {
+    i {
+      @extend .hide-over-m;
+    }
+    span {
+      @extend .hide-under-m;
+    }
+  }
+  li.access-item {
+    border-top: 1px solid #5e5e5e;
+    border-left: 1px solid #5e5e5e;
+    a {
+      display: table-cell;
+      vertical-align: middle;
+      color: white;
+      height: 20px;
+      font-size: 14px;
+      padding: 18px 15px 16px 15px;
+      @media (min-width: $min-break-s) {
+        padding: 10px 13px 8px 13px;
+        height: 40px;
+      }
+    }
+  }
+  .mail-icon {
+    width: 20px;
+    height: 15px;
+    display: block;
+    background: transparent url("../images/icons/mail.png") no-repeat top center;
+    background-size: 20px 13px;
+  }
+  .language-menu {
+    position: relative;
+    &.open ul {
+      display: block;
+    }
+    @media (min-width: $min-break-m) {
+      padding: 0 10px;
+    }
+    ul {
+      display: none;
+      position: absolute;
+      background: #2d2d2d;
+      top: 50px;
+      right: 0px;
+      border-top: 1px solid #5e5e5e;
+      width: 100%;
+      z-index: 1;
+      li {
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+      li a {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 5px 5px 4px 5px;
+        color: #999999;
+        &:hover {
+          color: white;
+        }
+      }
+      li.active {
+        @extend .hide-under-m;
+        a {
+          color: white;
+        }
+      }
+      @media (min-width: $min-break-s) {
+        top: 40px;
+      }
+      @media (min-width: $min-break-m) {
+        display: block;
+        position: static;
+        li {
+          float: left;
+          width: auto;
+          a {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 10px 5px 8px 5px;
+            height: 39px;
+          }
+        }
+      }
+    }
+    .active-language {
+      @extend .hide-over-m;
+      padding-bottom: 12px;
+      @media(min-width: $min-break-s) {
+        padding-bottom: 10px;  
+      }
+    }
+  }
+}

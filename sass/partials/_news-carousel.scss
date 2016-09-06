@@ -1,0 +1,105 @@
+.news-carousel {
+  h3 {
+    display: block;
+    font-size: 25px;
+    line-height: 25px;
+    margin: 20px;
+    @media(min-width: $min-break-s) {
+      font-size: 44px;
+      line-height: 44px;
+    }
+    span {
+      display: block;
+      font-size: 31px;
+      font-family: 'Times', serif;
+      font-style: italic;
+      color: #666666;
+      text-transform: none;
+      @media(min-width: $min-break-s) {
+        font-size: 44px;
+        line-height: 44px;
+      }
+    }
+  }
+  .owl-carousel {
+    position: relative;
+  }
+  .owl-item {
+    padding: 10px;
+    @media(min-width: $min-break-s) {
+      padding: 30px;
+    }
+  }
+  .item-image {
+    margin-bottom: 30px;
+    @media(min-width: $min-break-s) {
+      width: 50%;
+      display: inline-block;
+    }
+  }
+  .item-info {
+    @media(min-width: $min-break-s) {
+      display: inline-block;
+      width: 40%;
+      vertical-align: top;
+      margin-top: 30px;
+      margin-left: 25px;
+    }
+  }
+  .item-date {
+    font-family: "Times", Serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #666666;
+  }
+  .item-title {
+    margin-bottom: 25px;
+  }
+  .item-title h4 {
+    font-size: 16px;
+    text-transform: none;
+    margin: 0;
+    line-height: 20px;
+  }
+  .item-content {
+    @extend .web-content;
+    line-height: 20px;
+    margin: 10px 0;
+    padding: 0;
+    height: 80px;
+  }
+  .owl-dots {
+    text-align: center;
+  }
+  .owl-dot {
+    margin: 5px 3px;
+    display: inline-block;
+    background-color: #e6e6e6;
+    vertical-align: middle;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    &.active {
+      background-color: #333;
+    }
+  }
+  .owl-prev, .owl-next {
+    width: 36px;
+    height: 36px;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 36px 7px;
+    position: absolute;
+    bottom: -7px;
+    display: inline-block;
+  }
+  .owl-prev {
+    background-image: url(../images/icons/arrow-left-black.png);
+    left: calc(50% - 100px);
+  }
+  .owl-next {
+    background-image: url(../images/icons/arrow-right-black.png);
+    left: calc(50% + 64px);
+  }
+}

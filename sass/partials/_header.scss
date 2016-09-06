@@ -1,0 +1,112 @@
+.title-header {
+  @extend .container;
+  @extend .row;
+  position: relative;
+  padding: 30px 20px 29px 20px;
+  z-index: 5;
+  .site-title {
+    @extend h3;
+    width: 80%;
+    display: inline-block;
+    margin-bottom: 0;
+    @media (min-width: $min-break-m) {
+      width: 50%;
+    }
+  }
+  .secondary-menu {
+    @extend .hide-under-m;
+    @extend .pull-right;
+    .access-by-public-menu {
+      margin-right: 5px;
+      font-size: 13px;
+      background-size: 7px 13px;
+      cursor: pointer;
+      span {
+        padding: 14px 27px 12px 17px;
+        display: table-cell;
+        position: relative;
+        background: white url("../images/icons/arrow-bottom.png") no-repeat right 14px center;
+        z-index: 2;
+      }
+      ul {
+        opacity: 0;
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        width: 370px;
+        box-shadow: 0px 0px 30px -8px #656565;
+        z-index: 1;
+        background: white;
+        li {
+          border-bottom: 1px solid #c5c5c5;
+          position: relative;
+          width: 100%;
+          &:hover {
+            background: rgba(0, 0, 0, 0.04);
+          }
+          a {
+            display: block;
+            font-family: proximanova-bold;
+            text-transform: uppercase;
+            padding: 13px 18px 13px 11px;
+            width: 100%;
+            &:hover {
+              border-bottom: 0;
+            }
+          }
+        }
+      }
+      &:hover {
+        box-shadow: 0px -5px 30px -12px #656565;
+        ul {
+          opacity: 1;
+          display: block;
+        }
+      }
+    }
+    form {
+      margin-left: 10px;
+      padding: 5px 0 5px 0;
+      input[type=search] {
+        display: inline-block;
+        border: 0px none;
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0px;
+        border-bottom: 1px solid #c5c5c5;
+        margin-left: 5px;
+        cursor: pointer;
+        padding: 6px 8px 4px 8px;
+        color: black;
+        line-height: 20px;
+        &:focus {
+          outline: none;
+        }
+        &::placeholder,
+        &::-webkit-input-placeholder,
+        &:-ms-input-placeholder,
+        &::-ms-input-placeholder,
+        &:-moz-placeholder,
+        &::-moz-placeholder {
+          color: black;
+          opacity: 1;
+        }
+      }
+    }
+    input[type=submit] {
+      margin: 0;
+      padding: 0;
+      text-indent: -9999px;
+      overflow: hidden;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      outline: none;
+      background: transparent url("../images/icons/search.png") no-repeat center center;
+      background-size: 17px 17px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

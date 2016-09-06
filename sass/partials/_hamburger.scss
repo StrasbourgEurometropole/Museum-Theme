@@ -1,0 +1,44 @@
+.mobile-menu-toggle {
+  @extend .hide-over-m;
+  width: 35px;
+  margin-right: 5px;
+  margin-top: 15px;
+  padding: 0;
+  cursor: pointer;
+  float: right;
+  span, span:before, span:after {
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    height: 5px;
+    width: 35px;
+    background: #2d2d2d;
+    position: absolute;
+    display: block;
+    content: '';
+  }
+  span:before {
+    top: -12px;
+  }
+  span:after {
+    bottom: -12px;
+  }
+  &.active {
+    span {
+      background-color: transparent;
+    }
+    span:before, span:after {
+      top: 0;
+      bottom: 0;
+    }
+    span:before {
+      transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+    span:after {
+      transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+  }
+}

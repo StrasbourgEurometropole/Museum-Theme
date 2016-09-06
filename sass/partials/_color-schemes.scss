@@ -1,0 +1,107 @@
+@mixin color-scheme($museum-color) {
+
+  // Beadcrumb
+  .breadcrumb {
+    background: $museum-color;
+  }
+
+  // Museum header
+  .museum-header li.menu-item.home-item {
+    background-color: $museum-color;
+    &:hover {
+      background-color: $museum-color;
+    }
+  }
+
+  .museum-header li.active {
+    background-color: $museum-color; 
+  }
+
+  // Web content
+  .web-content h2 {
+    color: $museum-color;
+  }
+
+  .web-content h3,
+  .web-content .title-header .site-title,
+  .title-header .web-content .site-title {
+    color: $museum-color;
+  }
+
+  .web-content a {
+    border-bottom-color: $museum-color;
+  }
+
+  .web-content cite {
+    border-left-color: $museum-color;
+  }
+
+  // Page Header portlet
+  .page-header-portlet .portlet-content:after {
+    background-color: $museum-color;
+  }
+
+  // Carousel news
+  .news-carousel h3 span {
+    color: $museum-color;
+  }
+  .news-carousel .item-date {
+    color: $museum-color;
+  }
+
+  // Rubric
+  .rubric-portlet .rubric-page-read-more a {
+    border-bottom-color: $museum-color;
+  }
+
+  .rubric-portlet .rubric-page-name a:hover {
+    color: $museum-color;
+  }
+
+  .rubric-portlet .rubric-page-links a:hover {
+    color: $museum-color;
+  }
+}
+
+.cs-default {
+  @include color-scheme($museum-color-default);
+}
+.cs-hre {
+  @include color-scheme($museum-color-hre);
+}
+.cs-ced {
+  @include color-scheme($museum-color-ced);
+}
+.cs-mals {
+  @include color-scheme($museum-color-mals);
+}
+.cs-marc {
+  @include color-scheme($museum-color-marc);
+}
+.cs-mard {
+  @include color-scheme($museum-color-mard);
+}
+.cs-mamc {
+  @include color-scheme($museum-color-mamc);
+}
+.cs-mba {
+  @include color-scheme($museum-color-mba);
+}
+.cs-mh {
+  @include color-scheme($museum-color-mh);
+}
+.cs-mond {
+  @include color-scheme($museum-color-mond);
+}
+.cs-mtu {
+  @include color-scheme($museum-color-mtu);
+}
+.cs-mz {
+  @include color-scheme($museum-color-mz);
+}
+.cs-aub {
+  @include color-scheme($museum-color-aub);
+}
+.cs-aud {
+  @include color-scheme($museum-color-aud);
+}

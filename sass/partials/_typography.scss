@@ -1,0 +1,79 @@
+$proximanova-fonts: proximanova-light, proximanova-regular, proximanova-bold;
+
+@each $font in $proximanova-fonts {
+  @font-face {
+    font-family: #{$font};
+    src: url("../fonts/proximanova/#{$font}.eot");
+    src: url("../fonts/proximanova/#{$font}.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova/#{$font}.svg") format("svg"), url("../fonts/proximanova/#{$font}.woff") format("woff"), url("../fonts/proximanova/#{$font}.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  color: #2d2d2d;
+  text-transform: uppercase;
+  font-family: $font-family-bold;
+  margin: 10px 0 40px 0;
+}
+
+h1 {
+  font-size: 24px;
+  @media(min-width: $min-break-s) {
+    font-size: 44px;
+  }
+}
+
+h2 {
+  font-size: 16px;
+  @media(min-width: $min-break-s) {
+    font-size: 30px;
+  }
+}
+
+h3 {
+  font-size: 15px;
+  @media(min-width: $min-break-s) {
+    font-size: 24px;
+  }
+}
+
+h4 {
+  font-size: 14px;
+  @media(min-width: $min-break-s) {
+    font-size: 18px;
+  }
+}
+
+h5 {
+  font-size: 14px;
+  @media(min-width: $min-break-s) {
+    font-size: 16px;
+  }
+}
+
+h6 {
+  font-size: 14px;
+  @media(min-width: $min-break-s) {
+    font-size: 14px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #2d2d2d;
+  &:hover {
+    text-decoration: none;
+    color: #2d2d2d;  
+  }
+}
+
+strong {
+  font-family: $font-family-bold;
+}

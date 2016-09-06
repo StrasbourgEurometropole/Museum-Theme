@@ -1,0 +1,23 @@
+.breadcrumb {
+  padding: 15px 20px 13px 20px;
+  background: $museum-color;
+  text-transform: uppercase;
+  color: white;
+  font-size: 13px;
+  border-radius: 0;
+  @extend .container;
+  @extend .row;
+  @media(min-width: $min-break-m) {
+    padding: 10px 20px 8px 20px;
+    font-size: 12.825px;
+    line-height: 16px;
+  }
+  &.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    @media(min-width: $min-break-l) {
+      left: calc(50% - 640px);
+    }
+  }
+}
