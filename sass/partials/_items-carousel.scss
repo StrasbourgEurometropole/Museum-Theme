@@ -1,4 +1,4 @@
-.news-carousel {
+.items-carousel {
   h3 {
     display: block;
     font-size: 25px;
@@ -26,6 +26,10 @@
   }
   .owl-item {
     padding: 10px;
+    transition: background-color 0.2s ease-out;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
     @media(min-width: $min-break-s) {
       padding: 30px;
     }

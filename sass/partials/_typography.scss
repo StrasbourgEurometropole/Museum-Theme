@@ -77,3 +77,10 @@ a {
 strong {
   font-family: $font-family-bold;
 }
+
+.portlet-serif-title {  
+    font-family: 'Times', serif;
+    font-size: 32px !important;
+    font-style: italic;
+    text-transform: none;
+}

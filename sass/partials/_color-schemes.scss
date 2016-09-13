@@ -42,10 +42,10 @@
   }
 
   // Carousel news
-  .news-carousel h3 span {
+  .items-carousel h3 span {
     color: $museum-color;
   }
-  .news-carousel .item-date {
+  .items-carousel .item-date {
     color: $museum-color;
   }
 
@@ -60,6 +60,11 @@
 
   .rubric-portlet .rubric-page-links a:hover {
     color: $museum-color;
+  }
+
+  // Titres portlets
+  .portlet-serif-title {
+    border-bottom: 1px solid $museum-color;
   }
 }
 

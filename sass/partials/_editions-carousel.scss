@@ -1,0 +1,44 @@
+.editions-carousel {
+  h3 {
+    @extend .portlet-serif-title;
+  }
+  .owl-item {
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-top: 0;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  .item-image {
+    width: 37%;
+    display: inline-block !important;
+  }
+  .item-info {
+    margin-left: 20px;
+    margin-top: 30px;
+    display: inline-block !important;
+    vertical-align: top;
+    max-width: 50%;
+    @media(min-width: $min-break-s) {
+      max-width: 100%;
+    }
+  }
+  .item-title {
+    margin-bottom: 3px;
+  }
+  .item-type-and-size {
+    color: #888888;
+  }
+  .item-download-link {
+    margin-top: 15px;
+    display: inline-block;
+    font-family: $font-family-bold;
+    font-weight: 400;
+    color: #2d2d2d;
+    font-size: 14px;
+    padding-right: 35px;
+    background: url('/o/museum-theme/images/icons/download.png') no-repeat right center;
+    background-size: 30px 30px;
+  }
+}
