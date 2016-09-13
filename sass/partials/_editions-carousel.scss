@@ -41,4 +41,13 @@
     background: url('/o/museum-theme/images/icons/download.png') no-repeat right center;
     background-size: 30px 30px;
   }
+  .owl-dots {
+    padding: 10px 0px;
+    margin: 0 20px;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+  }
+  .owl-prev, .owl-next {
+    bottom: 4px;
+  }
 }

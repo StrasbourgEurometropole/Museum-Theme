@@ -66,6 +66,11 @@
   .portlet-serif-title {
     border-bottom: 1px solid $museum-color;
   }
+
+  // Survol documents utils
+  .useful-documents a:hover .file-name {
+    color: $museum-color;
+  }
 }
 
 .cs-default {

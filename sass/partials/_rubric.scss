@@ -4,9 +4,6 @@
     columns: 275px;
     column-gap: 40px;
     margin: 20px 0;
-    @media (min-width: $min-break-l) {
-      columns: 380px;
-    }
   }
   .rubric-page {
     margin-bottom: 40px;
