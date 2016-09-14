@@ -13,6 +13,7 @@ $proximanova-fonts: proximanova-light, proximanova-regular, proximanova-bold;
 body {
   font-family: $font-family-base;
   font-size: 16px;
+  color: #000000;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -84,4 +85,6 @@ strong {
     font-style: italic;
     text-transform: none;
     padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
