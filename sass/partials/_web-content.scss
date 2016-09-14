@@ -24,11 +24,7 @@
     }
   }
   h2 {
-    color: $museum-color;
-    font-size: 32px;
-    text-transform: none;
-    font-weight: normal;
-    font-family: $font-family-base;
+    @extend .portlet-serif-title;
   }
   h3 {
     font-size: 20px;
