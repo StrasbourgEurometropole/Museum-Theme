@@ -71,6 +71,14 @@
   .useful-documents a:hover .file-name {
     color: $museum-color;
   }
+
+  // Expositions
+  .exhibition .exhibition-tab-content-title {
+    background-color: $museum-color;
+  }
+  .exhibition .exhibition-tab.active {
+    background-color: $museum-color; 
+  }
 }
 
 .cs-default {
