@@ -1,0 +1,39 @@
+.contact-title {
+  @extend .portlet-serif-title;
+  margin: 20px;
+  border-bottom: none !important;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+}
+.contact-infos {
+  margin: 0 20px;
+  padding: 0 20px;
+  background-color: $museum-color;
+  color: white;
+  font-size: 15px;
+  div + div {
+    border-top: 1px solid white;
+  }
+  div {
+    padding: 15px 0px;
+  }
+  .contact-name {
+    font-family: $font-family-bold;
+    text-transform: uppercase;
+  }
+  .contact-mail {
+    padding-left: 35px;
+    background: url('/o/museum-theme/images/icons/small-mail.png') no-repeat left center;
+  }
+  .contact-phone {
+    padding-left: 35px;
+    background: url('/o/museum-theme/images/icons/small-phone.png') no-repeat left center;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
