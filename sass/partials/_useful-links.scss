@@ -21,6 +21,7 @@
       transition: transform 0.2s ease-out;
       &:hover {
         font-family: $font-family-bold;
+        color: $museum-color;
       }
     }
   }
