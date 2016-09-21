@@ -67,8 +67,13 @@
     border-bottom: 1px solid $museum-color;
   }
 
-  // Survol documents utils
+  // Survol documents utiles
   .useful-documents a:hover .file-name {
+    color: $museum-color;
+  }
+
+  // Survol liens utiles
+  .useful-links a:hover {
     color: $museum-color;
   }
 
