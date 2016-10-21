@@ -1,0 +1,112 @@
+.artwork-detail {
+  padding: 20px;
+  .artwork-images-main {
+    position: relative;
+    .artwork-images-main-copyright {
+      position: absolute;
+      bottom: 0;
+      padding: 13px 20px 13px 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      width: 100%;
+      font-size: 13px;
+    }
+  }
+  .artwork-images-carousel {
+    margin-top: 5px;
+    .artwork-images-carousel-buttons {
+      float: left;
+      position: relative;
+      margin-right: 5px;
+      z-index: 2;
+      .artwork-images-carousel-previous {
+        width: 68px;
+        height: 68px;
+        margin-bottom: 4px;
+        background: #333333 url("/o/museum-theme/images/icons/short-arrow-left-white.png") no-repeat center center;
+        cursor: pointer;
+      }
+      .artwork-images-carousel-next {
+        width: 68px;
+        height: 68px;
+        background: #333333 url("/o/museum-theme/images/icons/short-arrow-right-white.png") no-repeat center center;
+        cursor: pointer;
+      }
+    }
+    .owl-carousel {
+      .artwork-images-carousel-item {
+        height: 140px;
+      }
+      img {
+        width: auto;
+        height: 140px;
+      }
+    }
+  }
+  .artwork-title h1 {
+    margin-top: 35px;
+    margin-bottom: 0;
+  }
+  .artwork-artist {
+    @extend strong;
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  .artwork-date { 
+    margin-bottom: 30px;
+  }
+  .artwork-sources {
+    @extend strong;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #333333;
+  }
+  .artwork-collections a {
+    color: #888888;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .artwork-notice {
+    a {
+      display: block;
+      width: 100%;
+      padding: 8px 35px 7px 13px;
+      margin: 25px 0px;
+      border-top: 1px solid #d8d8d8;
+      border-bottom: 1px solid #d8d8d8;
+      font-size: 14px;
+      @extend strong;
+      background: url('/o/museum-theme/images/icons/arrow-grey-right.png') no-repeat right 10px center;
+      &:hover {
+        color: $museum-color;
+      }
+    }
+  }
+  .artwork-description {
+    font-size: 14px;
+  }
+  @media (min-width: $min-break-m) {
+    display: flex;
+    .artwork-images,
+    .artwork-info {
+      flex-basis: 50%;
+      padding: 20px;
+    }
+    .artwork-info {
+      max-width: 400px;
+    }
+    .artwork-notice {
+      width: 300px;
+    }
+    .artwork-images-carousel {
+      width: 620px;
+    }
+  }
+  @media (min-width: $min-break-l) {
+    .artwork-images-main {
+      margin-left: 70px;
+    }
+  }
+}
