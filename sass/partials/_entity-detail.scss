@@ -1,0 +1,88 @@
+.entity-detail {
+  padding: 20px;
+
+  .entity-images-main {
+    position: relative;
+
+    .entity-images-main-copyright {
+      position: absolute;
+      bottom: 0;
+      padding: 13px 20px 13px 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      width: 100%;
+      font-size: 13px;
+    }
+  }
+
+  .entity-images-carousel {
+    margin-top: 5px;
+
+    .entity-images-carousel-buttons {
+      float: left;
+      position: relative;
+      margin-right: 5px;
+      z-index: 2;
+
+      .entity-images-carousel-previous {
+        width: 68px;
+        height: 68px;
+        margin-bottom: 4px;
+        background: #333333 url("/o/museum-theme/images/icons/short-arrow-left-white.png") no-repeat center center;
+        cursor: pointer;
+      }
+
+      .entity-images-carousel-next {
+        width: 68px;
+        height: 68px;
+        background: #333333 url("/o/museum-theme/images/icons/short-arrow-right-white.png") no-repeat center center;
+        cursor: pointer;
+      }
+    }
+
+    .owl-carousel {
+      .entity-images-carousel-item {
+        height: 140px;
+      }
+
+      img {
+        width: auto;
+        height: 140px;
+      }
+    }
+  }
+
+  .entity-title h1 {
+    margin-top: 35px;
+    margin-bottom: 0;
+  }
+
+  .entity-description {
+    font-size: 14px;
+    margin-top: 25px;
+  }
+
+  @media (min-width: $min-break-m) {
+    display: flex;
+
+    .entity-images,
+    .entity-info {
+      flex-basis: 50%;
+      padding: 20px;
+    }
+
+    .entity-info {
+      max-width: 400px;
+    }
+
+    .entity-images-carousel {
+      width: 620px;
+    }
+  }
+
+  @media (min-width: $min-break-l) {
+    .entity-images-main {
+      margin-left: 70px;
+    }
+  }
+}

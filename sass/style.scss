@@ -1,37 +1,99 @@
+// Compass
 @import "compass";
 @import "compass/css3";
 
+// Vendors
 @import "partials/vendors/owl.carousel";
 @import "partials/vendors/owl.theme.default";
 @import "partials/vendors/magnific-popup";
 
+// Variables globales
 @import "partials/variables";
+
+// Règles de base
 @import "partials/base";
+
+// Layout
 @import "partials/layout";
+
+// Typographie
 @import "partials/typography";
+
+// Règles utilitaires
 @import "partials/utils";
 
+// Header supérieur
 @import "partials/header-top";
+
+// Header principal
 @import "partials/header";
+
+// Bouton "hamburger" du menu
 @import "partials/hamburger";
+
+// Menu
 @import "partials/menu";
+
+// Fil d'ariane
 @import "partials/breadcrumb";
+
+// Menu des musées
 @import "partials/museum-menu";
+
+// Menu mobile
 @import "partials/mobile-menu";
+
+// Footer
 @import "partials/footer";
+
+// Contenus web
 @import "partials/web-content";
+
+// Portlet "entête de page"
 @import "partials/page-header";
+
+// Carousel de la page d'accueil
 @import "partials/home-carousel";
+
+// Carousel générique d'items
 @import "partials/items-carousel";
+
+// Carousel d'éditions
 @import "partials/editions-carousel";
+
+// Carousel de collection d'oeuvres
+@import "partials/artwork-collections-carousel";
+
+// Portlet "rubrique"
 @import "partials/rubric";
+
+// ADT Documents utiles
 @import "partials/useful-documents";
+
+// ADT Liens utiles
 @import "partials/useful-links";
+
+// ADT Vidéo "à la une"
 @import "partials/video-viewer";
+
+// Contenus web Expositions
 @import "partials/exhibitions";
+
+// Détail entité générique
+@import "partials/entity-detail";
+
+// Détail oeuvre
 @import "partials/artwork-detail";
+
+// Détail collection d'oeuvres
+@import "partials/artwork-collection-detail";
+
+// Contenu web Contact
 @import "partials/contact";
+
+// Lightbox "magnific-popup"
 @import "partials/lightbox";
 
+// Déclinaisons de couleurs par musée
 @import "partials/color-schemes";
 

@@ -41,11 +41,16 @@
     background-color: $museum-color;
   }
 
-  // Carousel news
+  // Carousel items
   .items-carousel h3 span {
     color: $museum-color;
   }
   .items-carousel .item-date {
+    color: $museum-color;
+  }
+
+  // Carousel collections d'oeuvres
+  .artwork-collections-carousel h3 span {
     color: $museum-color;
   }
 
@@ -93,6 +98,19 @@
   // Détail oeuvre : lien vers notice
   .artwork-detail .artwork-notice a:hover {
     color: $museum-color;
+  }
+
+  // Détail galerie d'oeuvres : vignettes oeuvres
+  // Pour celui-ci ce n'est pas le color scheme global
+  // mais une classe css qui est directement appliqué à l'élément
+  // via une propriété de catégorie
+  &.artwork-collection-artwork {
+    .artwork-collection-artwork-info {
+      border-color: $museum-color;
+    }
+    .artwork-collection-artwork-source {
+      color: $museum-color;
+    }
   }
 }
 

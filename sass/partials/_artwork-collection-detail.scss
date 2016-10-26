@@ -1,0 +1,52 @@
+.artwork-collection-detail {
+  .collection-sources {
+    @extend strong;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #333333;
+  }
+  .collection-contributors {
+    margin: 20px 0;
+  }
+}
+.artwork-collection-artworks-title {
+  padding: 0 20px;
+}
+.artwork-collection-artworks {
+  padding: 20px;
+  column-count: 1;
+  column-gap: 20px;
+  @media(min-width: $min-break-s) {
+    column-count: 2;
+  }
+  @media(min-width: $min-break-m) {
+    column-count: 3;
+  }
+  @media(min-width: $min-break-l) {
+    column-count: 4;
+  }
+  .artwork-collection-artwork {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    background: #e6e6e6;
+  }
+  .artwork-collection-artwork-image {
+    text-align: center;
+  }
+  .artwork-collection-artwork-info {
+    border-top: 10px solid $museum-color;
+    padding: 20px;
+  }
+  .artwork-collection-artwork-source {
+    @extend strong;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: $museum-color;
+  }
+  .artwork-collection-artwork-title h4 {
+    font-size: 20px;
+    text-transform: none;
+  }
+}
