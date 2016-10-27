@@ -9,7 +9,7 @@
       position: absolute;
       bottom: 0;
       padding: 13px 20px 13px 20px;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-or: rgba(0, 0, 0, 0.5);
       color: white;
       width: 100%;
       font-size: 13px;
@@ -84,6 +84,40 @@
   @media (min-width: $min-break-l) {
     .entity-images-main {
       margin-left: 70px;
+    }
+  }
+}
+
+.entity-detail-children-title {
+  padding: 0 20px;
+}
+.entity-detail-children {
+  padding: 20px;
+  column-count: 1;
+  column-gap: 20px;
+  @media(min-width: $min-break-s) {
+    column-count: 2;
+  }
+  @media(min-width: $min-break-m) {
+    column-count: 3;
+  }
+  @media(min-width: $min-break-l) {
+    column-count: 4;
+  }
+  .entity-detail-child {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    background: #e6e6e6;
+    .entity-detail-child-image {
+      text-align: center;
+    }
+    .entity-detail-child-info {
+      padding: 20px;
+      border-top: 10px solid $museum-color;
+    }
+    .entity-detail-child-title {
+      font-size: 20px;
+      text-transform: none;
     }
   }
 }

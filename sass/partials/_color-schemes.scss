@@ -95,6 +95,13 @@
     background-color: $museum-color;
   }
 
+  // Détail entités
+  .entity-detail-child {
+    .entity-detail-child-info {
+      border-color: $museum-color;
+    }
+  }
+
   // Détail oeuvre : lien vers notice
   .artwork-detail .artwork-notice a:hover {
     color: $museum-color;
