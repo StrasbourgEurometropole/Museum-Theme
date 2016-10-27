@@ -112,6 +112,11 @@
       color: $museum-color;
     }
   }
+
+  // Détail éditions : infos meta
+  .edition-detail .edition-meta {
+    border-left: 3px solid $museum-color;
+  }
 }
 
 .cs-default {
