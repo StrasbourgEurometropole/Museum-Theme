@@ -3402,6 +3402,11 @@ strong, .page-header-portlet .page-header-share span, .rubric-portlet .rubric-pa
   text-decoration: underline;
 }
 
+/* line 2, ../sass/partials/_edition-gallery-detail.scss */
+.edition-gallery-detail .gallery-edition-count {
+  color: #888888;
+}
+
 /* line 1, ../sass/partials/_contact.scss */
 .contact-title {
   margin: 20px;
