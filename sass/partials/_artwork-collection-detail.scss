@@ -10,15 +10,3 @@
     margin: 20px 0;
   }
 }
-.artwork-collection-artworks {
-  .artwork-collection-artwork-info {
-    border-top: 10px solid $museum-color;
-  }
-  .artwork-collection-artwork-source {
-    @extend strong;
-    text-align: right;
-    text-transform: uppercase;
-    font-size: 13px;
-    color: $museum-color;
-  }
-}

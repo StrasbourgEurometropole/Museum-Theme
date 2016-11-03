@@ -115,9 +115,16 @@
       padding: 20px;
       border-top: 10px solid $museum-color;
     }
-    .entity-detail-child-title {
+    .entity-detail-child-title h4 {
       font-size: 20px;
       text-transform: none;
+    }
+    .entity-detail-child-source {
+      @extend strong;
+      text-align: right;
+      text-transform: uppercase;
+      font-size: 13px;
+      color: $museum-color;
     }
   }
 }
