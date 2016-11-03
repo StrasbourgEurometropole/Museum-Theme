@@ -1,0 +1,21 @@
+.video-detail {
+  .video-detail-player {
+    @extend .video-container;
+  }
+  .video-detail-info {
+    padding: 20px;
+  }
+  .video-transcription,
+  .video-origin {
+    @extend .arrow-block-link;
+  }
+  .video-galleries {
+    margin: 25px 0;
+    a {
+      color: #888888;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

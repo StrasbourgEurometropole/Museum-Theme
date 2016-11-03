@@ -24,20 +24,7 @@
     }
   }
   .artwork-notice {
-    a {
-      display: block;
-      width: 100%;
-      padding: 8px 35px 7px 13px;
-      margin: 25px 0px;
-      border-top: 1px solid #d8d8d8;
-      border-bottom: 1px solid #d8d8d8;
-      font-size: 14px;
-      @extend strong;
-      background: url('/o/museum-theme/images/icons/arrow-grey-right.png') no-repeat right 10px center;
-      &:hover {
-        color: $museum-color;
-      }
-    }
+    @extend .arrow-block-link;
   }
   @media (min-width: $min-break-m) {
     .artwork-notice {

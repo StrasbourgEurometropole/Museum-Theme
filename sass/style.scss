@@ -91,8 +91,8 @@
 // Détail édition
 @import "partials/edition-detail";
 
-// Détail galerie d'éditions
-@import "partials/edition-gallery-detail";
+// Détail vidéo
+@import "partials/video-detail";
 
 // Portlet recherche d'assets
 @import "partials/search-asset";
@@ -105,6 +105,9 @@
 
 // Lightbox "magnific-popup"
 @import "partials/lightbox";
+
+// Composants réutilisés
+@import "partials/components";
 
 // Déclinaisons de couleurs par musée
 @import "partials/color-schemes";

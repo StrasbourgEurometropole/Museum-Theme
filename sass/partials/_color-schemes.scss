@@ -115,12 +115,6 @@
     }
   }
 
-  // Détail oeuvre : lien vers notice
-  .artwork-detail .artwork-notice a:hover {
-    color: $museum-color;
-  }
-
-
   // Détail éditions : infos meta
   .edition-detail .edition-meta {
     border-left: 3px solid $museum-color;
@@ -128,6 +122,11 @@
 
   // Recherche entités : nombre de résultats
   .search-asset-portlet .search-asset-result-count span {
+    color: $museum-color;
+  }
+
+  // Survol lien avec flèche
+  .arrow-block-link a:hover {
     color: $museum-color;
   }
 }

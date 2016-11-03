@@ -7,29 +7,30 @@
 }
 
 .hide-under-s {
-  @media(max-width: $max-break-s) {
+  @media (max-width: $max-break-s) {
     display: none !important;
   }
 }
 
 .hide-over-s {
-  @media(min-width: $min-break-s) {
+  @media (min-width: $min-break-s) {
     display: none !important;
-  } 
+  }
 }
 
 .hide-under-m {
-  @media(max-width: $max-break-m) {
+  @media (max-width: $max-break-m) {
     display: none !important;
   }
 }
 
 .hide-over-m {
-  @media(min-width: $min-break-m) {
+  @media (min-width: $min-break-m) {
     display: none !important;
-  } 
+  }
 }
 
+// Conteneur responsive d'une vidéo
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -37,9 +38,10 @@
   height: 0;
   overflow: hidden;
 }
+
 .video-container iframe,
-  .video-container object,
-  .video-container embed {
+.video-container object,
+.video-container embed {
   position: absolute;
   top: 0;
   left: 0;
