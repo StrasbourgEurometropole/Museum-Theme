@@ -1,9 +1,21 @@
 .video-viewer {
   margin: 20px;
+
   .video-viewer-title {
     @extend .portlet-serif-title;
   }
-  .video-viewer-player {
-    @extend .video-container;
+
+  .video-viewer-video-title {
+    margin-top: 0;
+    a {
+      margin-top: 0;
+      font-size: 16px;
+      padding: 10px 54px 10px 10px;
+      background-size: 30px 30px;
+      text-transform: none;
+      display: block;
+      border-bottom: 1px solid #d8d8d8;
+      background: url(/o/museum-theme/images/icons/arrow-grey-right.png) no-repeat right 10px center;
+    }
   }
 }
