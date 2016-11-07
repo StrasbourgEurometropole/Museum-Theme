@@ -80,11 +80,23 @@ strong {
 }
 
 .portlet-serif-title {  
-    font-family: 'Times', serif;
-    font-size: 32px !important;
-    font-style: italic;
-    text-transform: none;
-    padding-bottom: 5px;
-    margin-top: 0;
-    margin-bottom: 20px;
+  font-family: 'Times', serif;
+  font-size: 32px !important;
+  font-style: italic;
+  text-transform: none;
+  padding-bottom: 5px;
+  margin-top: 0;
+  margin-bottom: 20px;
+   a {
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    float: right;
+    margin-top: 15px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
