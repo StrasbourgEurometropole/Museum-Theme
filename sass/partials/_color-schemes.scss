@@ -49,6 +49,14 @@
     color: $museum-color;
   }
 
+  // Carousel news
+  .news-carousel .items-carousel-title a {
+    border-color: $museum-color;
+  }
+  .news-carousel .news-secondary-links a {
+    border-color: $museum-color;
+  }
+
   // Carousel collections d'oeuvres
   .artwork-collections-carousel h3 span {
     color: $museum-color;
@@ -134,8 +142,8 @@
 .cs-default {
   @include color-scheme($museum-color-default);
 }
-.cs-hre {
-  @include color-scheme($museum-color-hre);
+.cs-bib {
+  @include color-scheme($museum-color-bib);
 }
 .cs-ced {
   @include color-scheme($museum-color-ced);
