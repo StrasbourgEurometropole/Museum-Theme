@@ -1,0 +1,27 @@
+.key-links {
+  @media (min-width: $min-break-s) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  a {
+    width: auto;
+    display: block;
+    padding: 15px 30px;
+    border: 1px solid $museum-color;
+    margin: 10px 20px;
+    text-align: center;
+    font-family: $font-family-bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: background 0.2s ease-out;
+    &:hover {
+      color: white;
+      background: $museum-color;
+    }
+    @media(min-width: $min-break-s) {
+      width: 270px;
+    }
+  }
+}

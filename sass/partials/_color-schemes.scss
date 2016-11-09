@@ -137,6 +137,16 @@
   .arrow-block-link a:hover {
     color: $museum-color;
   }
+
+  // Bordure liens clés
+  .key-links a {
+    border-color: $museum-color;
+  }
+
+  // Survol lien clés
+  .key-links a:hover {
+    background: $museum-color;
+  }
 }
 
 .cs-default {
