@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 // Compass
 @import "compass";
 @import "compass/css3";
@@ -51,6 +53,9 @@
 
 // Portlet "entête de page"
 @import "partials/page-header";
+
+// Chiffres clés
+@import "partials/key-numbers";
 
 // Carousel de la page d'accueil
 @import "partials/home-carousel";
