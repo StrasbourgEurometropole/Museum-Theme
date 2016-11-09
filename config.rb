@@ -1,4 +1,6 @@
+# encoding: utf-8
 require 'compass/import-once/activate'
+require 'autoprefixer-rails'
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
@@ -23,3 +25,8 @@ javascripts_dir = "js"
 # preferred_syntax = :sass
 # and then run:
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
+
+on_stylesheet_saved do |file|
+  system ("postcss -u autoprefixer css/style.css -r")
+end
+
