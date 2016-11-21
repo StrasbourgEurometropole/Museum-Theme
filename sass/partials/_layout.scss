@@ -22,6 +22,9 @@ div[class^=col-] {
 
 .portlet-nested-portlets {
   margin-bottom: 40px;
+  .portlet-layout.row {
+    margin: 0;
+  }
 }
 
 @media (min-width: $min-break-m) {
