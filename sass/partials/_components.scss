@@ -17,3 +17,26 @@
     width: 300px;
   }
 }
+
+.image-with-copyright {
+  position: relative;
+}
+.image-with-copyright-on-hover {
+  position: relative;
+  .image-copyright {
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+  }
+  &:hover .image-copyright {
+    opacity: 1;
+  }
+}
+.image-copyright {
+  position: absolute;
+  bottom: 0;
+  padding: 13px 20px 13px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  font-size: 13px;
+}

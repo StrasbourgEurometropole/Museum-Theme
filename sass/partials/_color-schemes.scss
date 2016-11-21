@@ -147,6 +147,22 @@
   .key-links a:hover {
     background: $museum-color;
   }
+
+  // A la une
+  .featured-header .featured-header-title span {
+    color: $museum-color;
+  }
+  .featured-artwork-detail {
+    &:before {
+      background-color: $museum-color;
+    }
+    &:after {
+      border-top-color: $museum-color;
+    }
+  }
+  .featured-footer h2 span {
+    color: $museum-color;
+  }
 }
 
 .cs-default {
