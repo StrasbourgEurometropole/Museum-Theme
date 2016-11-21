@@ -114,6 +114,10 @@
   @extend .useful-links;
   padding-top: 50px;
   padding-left: 35px;
+  padding-right: 35px;
+  @media(min-width: 992px) {
+    padding-right: 0;
+  }
   h2 {
     font-size: 44px;
     margin-bottom: 20px;

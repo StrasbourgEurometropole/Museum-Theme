@@ -4046,13 +4046,20 @@ strong, .page-header-portlet .page-header-share span, .news-carousel .news-secon
 .featured-footer {
   padding-top: 50px;
   padding-left: 35px;
+  padding-right: 35px;
 }
-/* line 117, ../sass/partials/_featured.scss */
+@media (min-width: 992px) {
+  /* line 113, ../sass/partials/_featured.scss */
+  .featured-footer {
+    padding-right: 0;
+  }
+}
+/* line 121, ../sass/partials/_featured.scss */
 .featured-footer h2 {
   font-size: 44px;
   margin-bottom: 20px;
 }
-/* line 120, ../sass/partials/_featured.scss */
+/* line 124, ../sass/partials/_featured.scss */
 .featured-footer h2 span {
   display: block;
   font-size: 54px;
@@ -4062,12 +4069,12 @@ strong, .page-header-portlet .page-header-share span, .news-carousel .news-secon
   color: #666666;
   text-transform: none;
 }
-/* line 130, ../sass/partials/_featured.scss */
+/* line 134, ../sass/partials/_featured.scss */
 .featured-footer ul {
   border-top: 1px solid #d8d8d8;
   margin: 0;
 }
-/* line 134, ../sass/partials/_featured.scss */
+/* line 138, ../sass/partials/_featured.scss */
 .featured-footer li {
   padding: 0 15px;
 }
