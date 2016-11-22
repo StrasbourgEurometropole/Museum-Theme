@@ -1,0 +1,39 @@
+.all-news {
+  padding: 20px;
+
+  .news {
+    margin-bottom: 20px;
+    @media (min-width: $min-break-s) {
+      margin-bottom: 40px;
+    }
+  }
+  .news-image {
+    @media (min-width: $min-break-s) {
+      display: inline-block;
+      width: 300px;
+    }
+  }
+
+  .news-info {
+    padding: 10px;
+    @media (min-width: $min-break-s) {
+      display: inline-block;
+      padding: 20px 0;
+      margin-left: 25px;
+      vertical-align: top;
+    }
+  }
+
+  .news-date {
+    font-family: "Times", Serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #666666;
+  }
+
+  .news-title h4 {
+    font-size: 16px;
+    text-transform: none;
+    margin-bottom: 20px;
+  }
+}
