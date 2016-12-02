@@ -20,18 +20,17 @@
     &:hover {
       background-color: #3d3d3d;
     }
+    &.active {
+      background-color: $museum-color; 
+    }
   }
   li.menu-item.home-item {
-    background-color: $museum-color;
     i.home-icon {
       background-image: url("../images/icons/home.png");
       background-repeat: no-repeat;
       width: 15px;
       height: 13px;
       display: block;
-    }
-    &:hover {
-      background-color: $museum-color;
     }
   }
   &.sticky {

@@ -6,13 +6,6 @@
   }
 
   // Museum header
-  .museum-header li.menu-item.home-item {
-    background-color: $museum-color;
-    &:hover {
-      background-color: $museum-color;
-    }
-  }
-
   .museum-header li.active {
     background-color: $museum-color; 
   }
@@ -103,10 +96,20 @@
     background-color: $museum-color;
   }
 
-  // Détail entités
+  // Détail/vignette entités
   .entity-detail-child, .entity-thumbnail {
     .entity-detail-child-info, .entity-thumbnail-info {
       border-color: $museum-color;
+    }
+  }
+
+  // Flèche vignette entité
+  .entity-thumbnail-info {
+    &:before {
+      background-color: $museum-color;
+    }
+    &:after {
+      border-top-color: $museum-color;
     }
   }
 
@@ -126,6 +129,11 @@
   // Détail éditions : infos meta
   .edition-detail .edition-meta {
     border-left: 3px solid $museum-color;
+  }
+
+  // Détail événement : site internet
+  .event-detail .event-info li a:hover {
+    color: $museum-color;
   }
 
   // Recherche entités : nombre de résultats

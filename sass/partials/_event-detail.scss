@@ -1,0 +1,174 @@
+.event-detail {
+  .event-header {
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+
+  .event-title {
+    padding: 0 20px;
+    margin-bottom: 0;
+  }
+
+  .event-subtitle {
+    margin-bottom: 0;
+  }
+
+  .event-dates {
+    margin-top: 20px;
+    font-size: 23px;
+  }
+
+  .event-address {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .event-phone {
+    @extend strong;
+
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  .image-with-copyright {
+    margin-bottom: 40px;
+  }
+
+  .access-for-disabled-icons {
+    margin-bottom: 10px;
+
+    img {
+      padding: 5px;
+    }
+  }
+
+  .mail-success, .free-event {
+    color: #4CAF50;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .error-message {
+    color: #F44336;
+  }
+
+  form {
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type=text], textarea {
+      width: 250px;
+      padding: 5px;
+      border: 1px solid darkgrey;
+      &.error {
+        border-color: #F44336;
+      }
+    }
+
+    textarea {
+      width: 350px;
+      height: 100px;
+      max-width: 100%;
+    }
+  }
+
+  .event-info {
+    .event-website {
+      h4 {
+        margin-bottom: 0;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      li {
+        padding: 0;
+        display: block;
+        border-bottom: 1px solid #d8d8d8;
+        background: url("/o/museum-theme/images/icons/arrow-grey-right.png") no-repeat right 10px center;
+
+        a {
+          display: block;
+          padding: 10px 54px 10px 0;
+          background-size: 30px 30px;
+          transition: transform 0.2s ease-out;
+          border-bottom: 0;
+
+          &:hover {
+            font-family: $font-family-bold;
+            color: $museum-color;
+          }
+        }
+      }
+    }
+
+    .event-60 h4 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .event-40 h4 {
+      @extend .portlet-serif-title;
+    }
+
+    .event-60, .event-40 {
+      padding: 20px;
+    }
+
+    .event-info-section {
+      @extend .web-content;
+
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: $min-break-s) {
+      display: flex;
+
+      .event-60 {
+        width: 60%;
+        border-right: 1px solid #d8d8d8;
+      }
+
+      .event-40 {
+        width: 40%;
+      }
+
+      .event-info-section {
+        padding: 0 20px;
+      }
+    }
+
+    @media (min-width: $min-break-m) {
+      .event-60 {
+        width: 67%;
+      }
+
+      .event-40 {
+        width: 33%;
+      }
+    }
+  }
+
+  &.manifestation-detail {
+    .entity-detail {
+      display: block;
+    }
+    .entity-detail-children {
+      padding: 20px 0;     
+      @media(min-width: $min-break-l) {
+        column-count: 3;
+      }
+      h4 {
+        text-transform: none;
+      }
+    }
+    .event-60 {
+      border-right: 0;
+    }
+  }
+}

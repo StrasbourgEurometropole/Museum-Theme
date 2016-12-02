@@ -27,6 +27,8 @@ javascripts_dir = "js"
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 
 on_stylesheet_saved do |file|
+  print "autoprefixer: in progress\n"
   system ("postcss -u autoprefixer css/style.css -r")
+  print "autoprefixer: done\n"
 end
 
