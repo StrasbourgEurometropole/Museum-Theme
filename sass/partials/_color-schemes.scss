@@ -1,7 +1,7 @@
 @mixin color-scheme($museum-color) {
 
   // Beadcrumb
-  .breadcrumb {
+  .breadcrumb-wrapper, .breadcrumb {
     background: $museum-color;
   }
 

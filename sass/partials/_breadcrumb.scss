@@ -1,16 +1,41 @@
-.breadcrumb {
-  padding: 15px 20px 13px 20px;
+.breadcrumb-wrapper {
   background: $museum-color;
-  text-transform: uppercase;
+  padding: 15px 20px 13px 20px;
   color: white;
-  font-size: 13px;
-  border-radius: 0;
+  a {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: white;
+  }
+  ul {
+    line-height: 18px;
+  }
+  .portlet {
+    margin: 0;
+  }
+  .portlet-content {
+    border-radius: 0;
+  }
+  .breadcrumb {
+    padding: 0;
+    margin: 0;
+    & > li + li:before {
+      content: "-";
+    }
+    li:last-child {
+      &:before {
+        font-family: $font-family-base;
+      }
+      @extend strong;
+    }
+  }
   @extend .container;
   @extend .row;
   @media(min-width: $min-break-m) {
-    padding: 10px 20px 8px 20px;
-    font-size: 12.825px;
-    line-height: 16px;
+    padding: 11px 20px 8px 20px;
+    ul {
+      line-height: 13px;
+    }
   }
   &.sticky {
     position: fixed;

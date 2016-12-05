@@ -39,3 +39,19 @@
     margin-bottom: 20px;
   }
 }
+
+.portlet-asset-publisher {
+  // On masque le bouton retour par défaut
+  .header-back-to, .header-back-to ~ * {
+    display: none;
+  }
+  // Bouton retour
+  .back-button a {
+    font-size: 20px;
+    &:before {
+      display: inline-block;
+      padding-right: 5px;
+      content: "<";
+    }
+  }
+}
