@@ -14,12 +14,16 @@
     .search-asset-fields {
       border-bottom: 1px solid #cccccc;
     }
-
     input[type="checkbox"],
     input[type="radio"] {
       visibility: hidden;
+    }
+
+    //input[type="checkbox"],
+    .input-checkbox-wrapper label,
+    .radio label {
       position: relative;
-      margin-right: 12px;
+      padding-left: 12px;
 
       &:after, &:before {
         position: absolute;
@@ -29,7 +33,7 @@
       }
 
       &:before {
-        top: -2px;
+        top: 2px;
         left: 0;
         width: 19px;
         height: 19px;
@@ -39,7 +43,7 @@
       }
 
       &:after {
-        top: -5px;
+        top: 0;
         left: 9px;
         width: 7px;
         height: 17px;
@@ -52,13 +56,17 @@
         transition: opacity 0.3s ease;
       }
 
-      &:checked:after {
+      &.checked:after {
         opacity: 1;
       }
     }
 
-    input[type="radio"] {
-      &:before {
+    .radio {
+      input[type="radio"] {
+        position: static;
+        margin-left: 0px;
+      }
+      label:before {
         border-radius: 9px !important;
       }
     }
