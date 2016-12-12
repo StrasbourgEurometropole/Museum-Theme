@@ -55,4 +55,8 @@
       content: "<";
     }
   }
+  // On masque le filtre par thème
+  h2.taglib-categorization-filter {
+    display: none;
+  }
 }

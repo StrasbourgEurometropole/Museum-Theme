@@ -1,0 +1,44 @@
+.numeric-reviews {
+  h1.all-reviews-title {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .reviews-category-description {
+    margin: 20px 0 0 0;
+    font-family: "Times", Serif;
+    font-size: 20px;
+    font-style: italic;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 27px;
+    @media (min-width: $min-break-s) {
+      font-size: 27px;
+      margin: 40px auto 0 auto;
+      max-width: 80%;
+      line-height: 38px;
+    }
+  }
+  .all-reviews {
+    padding: 0 20px;
+    column-count: 1;
+    column-gap: 20px;
+    margin-top: 30px;
+
+    @media (min-width: $min-break-s) {
+      column-count: 1;
+      margin-top: 70px;
+    }
+
+    @media (min-width: $min-break-m) {
+      column-count: 2;
+    }
+
+    @media (min-width: $min-break-l) {
+      column-count: 3;
+    }
+  }
+}
