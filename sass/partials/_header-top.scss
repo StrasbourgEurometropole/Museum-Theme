@@ -104,6 +104,7 @@
       @media (min-width: $min-break-m) {
         display: block;
         position: static;
+        border-top: 0;
         li {
           float: left;
           width: auto;
