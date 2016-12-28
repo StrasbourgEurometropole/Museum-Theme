@@ -138,17 +138,21 @@
     }
 
     button.btn-primary {
-      float: right;
-      width: 150px;
-      margin: 20px 10px;
-      border: none;
-      padding: 10px;
-      border-radius: 0;
-      background: black;
-      color: white;
-      font-size: 13px;
-      font-family: proximanova-bold;
-      text-transform: uppercase;
+      display: none;
+      @media(min-width: $min-break-s) {
+        display: block;
+        float: right;
+        width: 150px;
+        margin: 20px 10px;
+        border: none;
+        padding: 10px;
+        border-radius: 0;
+        background: black;
+        color: white;
+        font-size: 13px;
+        font-family: proximanova-bold;
+        text-transform: uppercase;
+      }
     }
 
   }
@@ -194,9 +198,13 @@
   }
 
   #keywords-deported-form {
+    margin-top: 20px;
     padding: 20px;
     padding-top: 0;
     position: relative;
+    @media(min-width: $min-break-s) {
+      margin-top: 0;
+    }
     label {
       display: none;
     }

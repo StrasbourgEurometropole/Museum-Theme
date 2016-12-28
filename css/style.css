@@ -4192,37 +4192,44 @@ strong, .breadcrumb-wrapper .breadcrumb li:last-child, .page-header-portlet .pag
 }
 /* line 140, ../sass/partials/_search-asset.scss */
 .search-asset-portlet .search-asset-form form button.btn-primary {
-  float: right;
-  width: 150px;
-  margin: 20px 10px;
-  border: none;
-  padding: 10px;
-  border-radius: 0;
-  background: black;
-  color: white;
-  font-size: 13px;
-  font-family: proximanova-bold;
-  text-transform: uppercase;
+  display: none;
 }
-/* line 157, ../sass/partials/_search-asset.scss */
+@media (min-width: 602px) {
+  /* line 140, ../sass/partials/_search-asset.scss */
+  .search-asset-portlet .search-asset-form form button.btn-primary {
+    display: block;
+    float: right;
+    width: 150px;
+    margin: 20px 10px;
+    border: none;
+    padding: 10px;
+    border-radius: 0;
+    background: black;
+    color: white;
+    font-size: 13px;
+    font-family: proximanova-bold;
+    text-transform: uppercase;
+  }
+}
+/* line 161, ../sass/partials/_search-asset.scss */
 .search-asset-portlet .search-asset-portlet-page .search-asset-form {
   margin: 0 20px;
 }
 @media (min-width: 602px) {
-  /* line 156, ../sass/partials/_search-asset.scss */
+  /* line 160, ../sass/partials/_search-asset.scss */
   .search-asset-portlet .search-asset-portlet-page {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  /* line 162, ../sass/partials/_search-asset.scss */
+  /* line 166, ../sass/partials/_search-asset.scss */
   .search-asset-portlet .search-asset-portlet-page .search-asset-form {
     -ms-flex-negative: 0;
         flex-shrink: 0;
     -ms-flex-preferred-size: 320px;
         flex-basis: 320px;
   }
-  /* line 166, ../sass/partials/_search-asset.scss */
+  /* line 170, ../sass/partials/_search-asset.scss */
   .search-asset-portlet .search-asset-portlet-page .search-asset-search-container {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -4231,12 +4238,12 @@ strong, .breadcrumb-wrapper .breadcrumb li:last-child, .page-header-portlet .pag
   }
 }
 @media (min-width: 919px) {
-  /* line 172, ../sass/partials/_search-asset.scss */
+  /* line 176, ../sass/partials/_search-asset.scss */
   .search-asset-portlet .search-asset-portlet-page .search-asset-form {
     margin-right: 60px;
   }
 }
-/* line 178, ../sass/partials/_search-asset.scss */
+/* line 182, ../sass/partials/_search-asset.scss */
 .search-asset-portlet .search-asset-results {
   padding: 0 20px;
   -webkit-column-count: 1;
@@ -4247,7 +4254,7 @@ strong, .breadcrumb-wrapper .breadcrumb li:last-child, .page-header-portlet .pag
           column-gap: 20px;
 }
 @media (min-width: 602px) {
-  /* line 178, ../sass/partials/_search-asset.scss */
+  /* line 182, ../sass/partials/_search-asset.scss */
   .search-asset-portlet .search-asset-results {
     -webkit-column-count: 1;
        -moz-column-count: 1;
@@ -4255,7 +4262,7 @@ strong, .breadcrumb-wrapper .breadcrumb li:last-child, .page-header-portlet .pag
   }
 }
 @media (min-width: 919px) {
-  /* line 178, ../sass/partials/_search-asset.scss */
+  /* line 182, ../sass/partials/_search-asset.scss */
   .search-asset-portlet .search-asset-results {
     -webkit-column-count: 2;
        -moz-column-count: 2;
@@ -4263,30 +4270,37 @@ strong, .breadcrumb-wrapper .breadcrumb li:last-child, .page-header-portlet .pag
   }
 }
 @media (min-width: 1280px) {
-  /* line 178, ../sass/partials/_search-asset.scss */
+  /* line 182, ../sass/partials/_search-asset.scss */
   .search-asset-portlet .search-asset-results {
     -webkit-column-count: 3;
        -moz-column-count: 3;
             column-count: 3;
   }
 }
-/* line 196, ../sass/partials/_search-asset.scss */
+/* line 200, ../sass/partials/_search-asset.scss */
 .search-asset-portlet #keywords-deported-form {
+  margin-top: 20px;
   padding: 20px;
   padding-top: 0;
   position: relative;
 }
-/* line 200, ../sass/partials/_search-asset.scss */
+@media (min-width: 602px) {
+  /* line 200, ../sass/partials/_search-asset.scss */
+  .search-asset-portlet #keywords-deported-form {
+    margin-top: 0;
+  }
+}
+/* line 208, ../sass/partials/_search-asset.scss */
 .search-asset-portlet #keywords-deported-form label {
   display: none;
 }
-/* line 203, ../sass/partials/_search-asset.scss */
+/* line 211, ../sass/partials/_search-asset.scss */
 .search-asset-portlet #keywords-deported-form input[type="text"] {
   border-radius: 0;
   margin-bottom: 10px;
   height: 46px;
 }
-/* line 208, ../sass/partials/_search-asset.scss */
+/* line 216, ../sass/partials/_search-asset.scss */
 .search-asset-portlet #keywords-deported-form input[type="submit"] {
   width: 150px;
   position: absolute;
@@ -4300,7 +4314,7 @@ strong, .breadcrumb-wrapper .breadcrumb li:last-child, .page-header-portlet .pag
   font-family: proximanova-bold;
   text-transform: uppercase;
 }
-/* line 223, ../sass/partials/_search-asset.scss */
+/* line 231, ../sass/partials/_search-asset.scss */
 .search-asset-portlet .lfr-pagination-delta-selector {
   display: none !important;
 }
