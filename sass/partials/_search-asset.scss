@@ -19,7 +19,6 @@
       visibility: hidden;
     }
 
-    //input[type="checkbox"],
     .input-checkbox-wrapper label,
     .radio label {
       position: relative;
@@ -136,6 +135,20 @@
       .input-checkbox-wrapper {
         display: none;
       }
+    }
+
+    button.btn-primary {
+      float: right;
+      width: 150px;
+      margin: 20px 10px;
+      border: none;
+      padding: 10px;
+      border-radius: 0;
+      background: black;
+      color: white;
+      font-size: 13px;
+      font-family: proximanova-bold;
+      text-transform: uppercase;
     }
 
   }
