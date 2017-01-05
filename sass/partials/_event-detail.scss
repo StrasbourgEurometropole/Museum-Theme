@@ -1,16 +1,16 @@
-.event-detail {
-  .event-header {
+.event-detail, .place-detail {
+  .event-header, .place-header {
     text-align: center;
     padding: 0 20px;
     margin-bottom: 30px;
   }
 
-  .event-title {
+  .event-title, .place-title {
     padding: 0 20px;
     margin-bottom: 0;
   }
 
-  .event-subtitle {
+  .event-subtitle, .place-subtitle {
     margin-bottom: 0;
   }
 
@@ -19,19 +19,19 @@
     font-size: 23px;
   }
 
-  .event-address {
+  .event-address, .place-address {
     margin-top: 20px;
     font-size: 18px;
   }
 
-  .event-phone {
+  .event-phone, .place-phone {
     @extend strong;
 
     font-size: 18px;
     margin-top: 5px;
   }
 
-  .image-with-copyright {
+  .image-with-copyright-on-hover {
     margin-bottom: 40px;
   }
 
@@ -63,6 +63,8 @@
       width: 250px;
       padding: 5px;
       border: 1px solid darkgrey;
+      border-radius: 0;
+      box-shadow: none;
       &.error {
         border-color: #F44336;
       }
@@ -75,8 +77,8 @@
     }
   }
 
-  .event-info {
-    .event-website {
+  .event-info, .place-info {
+    .event-website, .place-website, .place-schedule {
       h4 {
         margin-bottom: 0;
       }
@@ -105,50 +107,70 @@
         }
       }
     }
+    .place-schedule {
+      margin-bottom: 20px;
+      margin-top: -20px;
+     }
+    .place-schedule li.schedule {
+      padding: 10px 0;
+      background: none;
+      display: flex;
+      .schedule-day, .schedule-time {
+        width: 50%;
+      }
+      .schedule-time {
+        text-align: right;
+      }
+    }
 
-    .event-60 h4 {
+    .event-60 h4, .place-60 h4 {
       margin-top: 0;
       margin-bottom: 10px;
       text-transform: uppercase;
     }
 
-    .event-40 h4 {
+    .event-40 h4, .place-40 h4 {
       @extend .portlet-serif-title;
     }
 
-    .event-60, .event-40 {
+    .event-60, .event-40, .place-60, .place-40 {
       padding: 20px;
     }
 
-    .event-info-section {
+    .event-info-section, .place-info-section {
       @extend .web-content;
 
       margin-bottom: 40px;
+      &:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
     }
 
     @media (min-width: $min-break-s) {
       display: flex;
 
-      .event-60 {
+      .event-60, .place-60 {
         width: 60%;
         border-right: 1px solid #d8d8d8;
       }
 
-      .event-40 {
+      .event-40, .place-40 {
         width: 40%;
       }
 
-      .event-info-section {
+      .event-info-section, .place-info-section {
         padding: 0 20px;
       }
     }
 
     @media (min-width: $min-break-m) {
-      .event-60 {
+      .event-60,.place-60 {
         width: 67%;
       }
 
-      .event-40 {
+      .event-40, .place-40 {
         width: 33%;
       }
     }
