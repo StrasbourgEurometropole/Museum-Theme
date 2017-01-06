@@ -1,4 +1,21 @@
 .artwork-collection-detail {
+  display: block;
+  .entity-images {
+    float: left;
+    width: 50%;
+  }
+  .entity-info {
+    width: 80%;
+    max-width: none;
+  }
+  .entity-title h1 {
+    padding-top: 35px;
+  }
+  &:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
   .collection-sources {
     @extend strong;
     margin-top: 20px;
