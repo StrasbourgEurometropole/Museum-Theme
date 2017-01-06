@@ -215,3 +215,6 @@
 .cs-aud {
   @include color-scheme($museum-color-aud);
 }
+.cs-num {
+  @include color-scheme($numeric-review-color);
+}
