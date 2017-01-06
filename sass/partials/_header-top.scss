@@ -18,6 +18,10 @@
       }
     }
   }
+  .portlet-journal-content {
+    margin-top: -1px;
+    float: right;
+  }
   .accessibility-menu {
     @extend .pull-right;
     margin: -1px -18px 0 0;
@@ -64,6 +68,7 @@
     position: relative;
     &.open ul {
       display: block;
+      z-index: 100;
     }
     @media (min-width: $min-break-m) {
       padding: 0 10px;
