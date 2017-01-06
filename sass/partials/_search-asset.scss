@@ -231,4 +231,11 @@
   .lfr-pagination-delta-selector {
     display: none !important;
   }
+  .lfr-pagination-buttons {
+    margin-top: 6px;
+    li a {
+      border: none;
+      background: none;
+    }
+  }
 }
