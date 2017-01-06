@@ -63,11 +63,13 @@
     .entity-info {
       flex-basis: 50%;
       max-width: 50%;
-      padding: 20px;
+      margin: 20px;
+      padding-left: 20px;
     }
 
     .entity-info {
       max-width: 400px;
+      margin-left: 0;
     }
 
     .entity-images-carousel {
