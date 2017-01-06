@@ -44,14 +44,18 @@
   .museum-submenu {
     display: none;
     position: absolute;
+    width: 220px;
     li.menu-item {
       z-index: 5;
       border: 1px solid #515151;
       a {
-      width: 200px;
-      padding-top: 12px;
-      padding-bottom: 10px;
-      height: auto;
+        width: 220px;
+        padding-top: 12px;
+        padding-bottom: 10px;
+        height: auto;
+      }
+      & + li {
+        border-top: 0;
       }
     }
   }
