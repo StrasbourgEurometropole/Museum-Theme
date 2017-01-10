@@ -1,5 +1,4 @@
 .page-header-portlet {
-  margin-top: -32px;
   .portlet-content:after {
     display: block;
     content: "";
@@ -46,6 +45,7 @@
       @extend strong;
       text-transform: uppercase;
       font-size: 12px;
+      text-shadow: none;
     }
     .facebook, .twitter {
       display: inline-block;
@@ -162,6 +162,7 @@
           margin: 0;
           background: white;
           text-align: left;
+          text-shadow: none;
         }
       }
       .page-header-image-credit {
