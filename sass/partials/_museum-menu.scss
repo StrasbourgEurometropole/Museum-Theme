@@ -38,7 +38,9 @@
     top: 34px;
     z-index: 20;
     @media(min-width: $min-break-l) {
-      left: calc(50% - 640px);
+      left: 0;
+      right: 0;
+      margin: auto;
     }
   }
   .museum-submenu {

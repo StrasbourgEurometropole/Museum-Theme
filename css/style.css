@@ -1522,7 +1522,9 @@ strong, .breadcrumb-wrapper .breadcrumb li:last-child, .page-header-portlet .pag
 @media (min-width: 1280px) {
   /* line 61, ../sass/partials/_menu.scss */
   .menu-header.sticky {
-    left: calc(50% - 640px);
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 }
 
@@ -1592,7 +1594,9 @@ strong, .breadcrumb-wrapper .breadcrumb li:last-child, .page-header-portlet .pag
 @media (min-width: 1280px) {
   /* line 43, ../sass/partials/_breadcrumb.scss */
   .breadcrumb-wrapper.sticky {
-    left: calc(50% - 640px);
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 }
 
@@ -1641,32 +1645,34 @@ strong, .breadcrumb-wrapper .breadcrumb li:last-child, .page-header-portlet .pag
 @media (min-width: 1280px) {
   /* line 36, ../sass/partials/_museum-menu.scss */
   .museum-header.sticky {
-    left: calc(50% - 640px);
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 }
-/* line 44, ../sass/partials/_museum-menu.scss */
+/* line 46, ../sass/partials/_museum-menu.scss */
 .museum-header .museum-submenu {
   display: none;
   position: absolute;
   width: 220px;
 }
-/* line 48, ../sass/partials/_museum-menu.scss */
+/* line 50, ../sass/partials/_museum-menu.scss */
 .museum-header .museum-submenu li.menu-item {
   z-index: 5;
   border: 1px solid #515151;
 }
-/* line 51, ../sass/partials/_museum-menu.scss */
+/* line 53, ../sass/partials/_museum-menu.scss */
 .museum-header .museum-submenu li.menu-item a {
   width: 220px;
   padding-top: 12px;
   padding-bottom: 10px;
   height: auto;
 }
-/* line 57, ../sass/partials/_museum-menu.scss */
+/* line 59, ../sass/partials/_museum-menu.scss */
 .museum-header .museum-submenu li.menu-item + li {
   border-top: 0;
 }
-/* line 62, ../sass/partials/_museum-menu.scss */
+/* line 64, ../sass/partials/_museum-menu.scss */
 .museum-header li:hover .museum-submenu {
   display: block;
 }
