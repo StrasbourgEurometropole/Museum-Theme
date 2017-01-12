@@ -49,9 +49,14 @@
 
     @extend strong;
 
-    padding: 30px 60px;
+    
+    padding: 30px 10px;
     text-transform: uppercase;
     text-align: center;
+
+    @media (min-width: $min-break-s) {
+      padding: 30px 60px;
+    }
   }
 
   .welcome-text-1 {
