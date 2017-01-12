@@ -103,6 +103,8 @@
   .entity-detail-child {
     break-inside: avoid;
     margin-bottom: 20px;
+    width: 100%;
+    display: inline-block;
     background: #e6e6e6;
     .entity-detail-child-image {
       text-align: center;
