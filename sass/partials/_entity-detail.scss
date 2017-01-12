@@ -52,8 +52,10 @@
   }
 
   .entity-description {
+    @extend .web-content;
     font-size: 14px;
     margin-top: 25px;
+    padding: 0;
   }
 
   @media (min-width: $min-break-m) {
