@@ -26,6 +26,9 @@
     font-size: 13px;
     border-bottom: 1px solid #666666;
   }
+  .how-to-come-image {
+    display: none;
+  }
   @media(min-width: $min-break-s) {
     display: flex;
     .how-to-come-info {
@@ -33,12 +36,13 @@
       padding: 20px;
     }
     .how-to-come-image {
+      display: block;
       font-size: 0;
       &:before {
-      height: 100%;
-      display: inline-block;
-      content: "";
-      vertical-align: middle;
+        height: 100%;
+        display: inline-block;
+        content: "";
+        vertical-align: middle;
       }
       img {
         vertical-align: middle;

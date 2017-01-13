@@ -1,8 +1,12 @@
 .key-numbers {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: center;
 
+  @media (min-width: $min-break-s) {
+    display: flex;
+  }
+  
   .key-number {
     text-align: center;
     padding: 10px 40px;
