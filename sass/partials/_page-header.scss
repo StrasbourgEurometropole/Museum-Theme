@@ -136,7 +136,7 @@
         position: absolute;
         top: 80px;
         right: 0;
-        width: 48%;
+        width: 46%;
         .page-header-title {
           position: static;
         }
@@ -179,6 +179,9 @@
   }
   .alt-theme-2 {
     @media(min-width: $min-break-m) { 
+      .page-header-title-and-share {
+        width: 48%;
+      }
       .page-header-image {
         width: 48%;
         text-align: right;
