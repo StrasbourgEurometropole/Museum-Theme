@@ -114,7 +114,7 @@
 
     label {
       font-size: 16px;
-      font-family: $font-family-bold;
+      font-weight: normal;
     }
 
     .form-group {
@@ -129,10 +129,6 @@
     }
 
     .date-selection {
-      label {
-        font-weight: normal;
-        font-family: $font-family-base;
-      }
       .input-checkbox-wrapper {
         display: none;
       }
