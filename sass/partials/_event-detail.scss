@@ -1,3 +1,6 @@
+.place-detail {
+  margin-top: 40px;
+}
 .event-detail, .place-detail {
   .event-header, .place-header {
     text-align: center;
@@ -12,6 +15,16 @@
 
   .event-subtitle, .place-subtitle {
     margin-bottom: 0;
+  }
+
+  .place-links {
+    @extend .web-content;
+    @extend strong;
+    margin-top: 20px;
+    a {
+      display: inline-block;
+      margin: 0 5px;
+    }
   }
 
   .event-dates {
