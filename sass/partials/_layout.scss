@@ -27,6 +27,13 @@ div[class^=col-] {
   }
 }
 
+@media (min-width: 700px) {
+  .portlet-nested-portlets .col-md-4 {
+    width: 33.33333%;
+    float: left;
+  }
+}
+
 @media (min-width: $min-break-m) {
   .portlet-column-first {
     padding-right: 20px !important;
