@@ -1,20 +1,24 @@
 .artwork-collection-detail {
+  @media(min-width: $min-break-m) {
   display: block;
-  .entity-images {
-    float: left;
-    width: 50%;
-  }
-  .entity-info {
-    width: 80%;
-    max-width: none;
-  }
-  .entity-title h1 {
-    padding-top: 35px;
-  }
-  &:after {
-    display: block;
-    content: "";
-    clear: both;
+    .entity-images {
+      float: left;
+      width: 50%;
+    }
+    .entity-info {
+      max-width: none;
+      @media(min-width: $min-break-l) {
+        margin-left: 90px;
+      }
+    }
+    .entity-title h1 {
+      padding-top: 35px;
+    }
+    &:after {
+      display: block;
+      content: "";
+      clear: both;
+    }
   }
   .collection-sources {
     @extend strong;
