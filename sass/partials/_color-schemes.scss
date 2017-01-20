@@ -98,7 +98,7 @@
 
   // Détail/vignette entités
   .entity-detail-child, .entity-thumbnail {
-    .entity-detail-child-info, .entity-thumbnail-info {
+    .entity-detail-child-image, .entity-thumbnail-image {
       border-color: $museum-color;
     }
   }
@@ -118,7 +118,7 @@
   // mais une classe css qui est directement appliqué à l'élément
   // via une propriété de catégorie
   &.entity-detail-child, &.entity-thumbnail {
-    .entity-detail-child-info, .entity-thumbnail-info {
+    .entity-detail-child-image, .entity-thumbnail-image {
       border-color: $museum-color !important;
     }
     .entity-detail-child-source, .entity-thumbnail-source {
