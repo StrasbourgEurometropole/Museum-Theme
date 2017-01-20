@@ -34,10 +34,10 @@
     @extend .hide-under-m;
   }
   .contact {
-    i {
+    .mail-icon {
       @extend .hide-over-m;
     }
-    span {
+    .contact-text {
       @extend .hide-under-m;
     }
   }
