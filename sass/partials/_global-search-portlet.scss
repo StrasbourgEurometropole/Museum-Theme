@@ -1,0 +1,18 @@
+.global-search-portlet {
+  .search-asset-results {
+    column-count: 1;
+  }
+  .entity-thumbnail {
+    display: flex;
+  }
+  .entity-thumbnail-image {
+    width: 155px;
+    flex-shrink: 0;
+  }
+  .entity-thumbnail-info {
+    vertical-align: top;
+    &:before, &:after {
+      display: none;
+    }
+  }
+}
