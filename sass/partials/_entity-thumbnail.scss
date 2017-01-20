@@ -1,15 +1,13 @@
 .entity-thumbnail {
   break-inside: avoid;
-  width: 100%;
-  display: inline-block;
   margin-bottom: 20px;
   background-color: #e6e6e6;
   .entity-thumbnail-image {
+    border-bottom: 10px solid $museum-color;
     text-align: center;
   }
   .entity-thumbnail-info {
     padding: 20px;
-    border-top: 10px solid $museum-color;
     position: relative;
     &:before {
       display: block;
