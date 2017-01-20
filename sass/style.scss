@@ -141,3 +141,6 @@
 // Déclinaisons de couleurs par musée
 @import "partials/color-schemes";
 
+// CSS spécifique aux navigateurs
+@import "partials/browsers/_ie";
+@import "partials/browsers/firefox";
