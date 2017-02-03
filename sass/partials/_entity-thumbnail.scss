@@ -5,6 +5,17 @@
   .entity-thumbnail-image {
     border-bottom: 10px solid $museum-color;
     text-align: center;
+    &.no-image {
+      background-image: url('/o/museum-theme/images/icons/file-placeholder.png');
+      background-size: 70%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
   }
   .entity-thumbnail-info {
     padding: 20px;

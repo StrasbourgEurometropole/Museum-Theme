@@ -122,40 +122,40 @@
       opacity: 1;
     }
     &:nth-child(1):after {
-      background: $museum-color-bib;
-    }
-    &:nth-child(2):after {
-      background: $museum-color-ced;
-    }
-    &:nth-child(3):after {
       background: $museum-color-mals;
     }
-    &:nth-child(4):after {
+    &:nth-child(2):after {
       background: $museum-color-marc;
     }
-    &:nth-child(5):after {
+    &:nth-child(3):after {
       background: $museum-color-mard;
     }
-    &:nth-child(6):after {
+    &:nth-child(4):after {
       background: $museum-color-mamc;
     }
-    &:nth-child(7):after {
+    &:nth-child(5):after {
       background: $museum-color-mba;
     }
-    &:nth-child(8):after {
+    &:nth-child(6):after {
+      background: $museum-color-ced;
+    }
+    &:nth-child(7):after {
       background: $museum-color-mh;
     }
-    &:nth-child(9):after {
+    &:nth-child(8):after {
       background: $museum-color-mond;
     }
-    &:nth-child(10):after {
+    &:nth-child(9):after {
       background: $museum-color-mtu;
     }
-    &:nth-child(11):after {
+    &:nth-child(10):after {
       background: $museum-color-mz;
     }
-    &:nth-child(12):after {
+    &:nth-child(11):after {
       background: $museum-color-aub;
+    }
+    &:nth-child(12):after {
+      background: $museum-color-bib;
     }
     &:nth-child(13):after {
       background: $museum-color-aud;

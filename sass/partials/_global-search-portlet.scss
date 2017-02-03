@@ -11,6 +11,9 @@
   }
   .entity-thumbnail-info {
     vertical-align: top;
+    .entity-thumbnail-source {
+      text-align: left;
+    }
     &:before, &:after {
       display: none;
     }
