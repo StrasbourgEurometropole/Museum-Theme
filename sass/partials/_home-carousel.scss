@@ -19,6 +19,7 @@
   .carousel-item-title {
     color: white;
     font-size: 60px;
+    text-shadow: 0 0 10px #333333;
     display: none;
     @media(min-width: $min-break-m) {
       display: inline-block;
@@ -72,6 +73,7 @@
     font-family: $font-family-bold;
     font-size: 13px;
     text-transform: uppercase;
+    text-shadow: 0 0 10px #333333;
   }
   #carousel-custom-dots {
     z-index: 2;
