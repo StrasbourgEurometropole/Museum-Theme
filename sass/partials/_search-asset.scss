@@ -231,11 +231,22 @@
   .lfr-pagination-delta-selector {
     display: none !important;
   }
+  @media(max-width: $max-break-l) {
+    .lfr-pagination-config .dropdown-toggle {
+      margin: 0 20px;
+      float: none;
+    }
+  }
   .lfr-pagination-buttons {
     margin-top: 6px;
     li a {
       border: none;
       background: none;
+    }
+    @media(max-width: $max-break-l) {
+      li {
+        width: 100%;
+      }
     }
   }
 }
